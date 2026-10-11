@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Recursos y artículos sobre regulación minera, data products y cumplimiento.">
+    <title>Recursos | Cumplimiento Lean</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <div class="brand">Cumplimiento Lean</div>
+            <nav class="main-nav">
+                <a href="../../index.html">Inicio</a>
+                <a href="../../index.html#pricing">Pricing</a>
+                <a href="index.html" class="active">Recursos</a>
+                <a href="../contacto/index.html" class="cta-link">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h2>Recursos y Artículos</h2>
+                <p class="section-subtitle">Aprende sobre regulación minera, data products y mejores prácticas en cumplimiento.</p>
+
+                <div class="articles-grid" style="margin-top: 40px;">
+                    <article class="article-card">
+                        <div class="article-tag">Guía</div>
+                        <h3>Cómo estructurar tu matriz de riesgo regulatorio</h3>
+                        <p>Una matriz de riesgos regulatorios es la base para acelerar timelines de permisos. Descubre los 5 elementos esenciales que toda minera debe tener.</p>
+                        <a href="#">Leer más →</a>
+                    </article>
+
+                    <article class="article-card">
+                        <div class="article-tag">Caso</div>
+                        <h3>Reducción de 75% en tiempos de análisis regulatorio</h3>
+                        <p>Cómo una operación de litio aceleró su ciclo de permisos de 18 a 6 meses usando modelado predictivo.</p>
+                        <a href="#">Leer caso →</a>
+                    </article>
+
+                    <article class="article-card">
+                        <div class="article-tag">Tutorial</div>
+                        <h3>Construye tu dashboard regulatorio con Streamlit</h3>
+                        <p>Paso a paso: cómo transformar un PDF regulatorio en un dashboard interactivo usando Python y IA.</p>
+                        <a href="#">Ver tutorial →</a>
+                    </article>
+
+                    <article class="article-card">
+                        <div class="article-tag">Artículo</div>
+                        <h3>El futuro de la consultoría minera: data products</h3>
+                        <p>Por qué los data products están disrupting la industria de consultoría regulatoria y qué esperar en los próximos 2 años.</p>
+                        <a href="#">Leer artículo →</a>
+                    </article>
+                </div>
+
+                <div style="margin-top: 60px; text-align: center; background: rgba(56, 189, 248, 0.08); border-radius: 12px; padding: 32px;">
+                    <h3 style="margin-bottom: 12px;">Newsletter: Regulación Minera Semanal</h3>
+                    <p style="color: var(--muted); margin-bottom: 20px;">Recibe cada viernes un resumen de cambios regulatorios críticos, mejores prácticas y casos de éxito.</p>
+                    <form action="https://formspree.io/f/myzqbzgb" method="POST" style="display: flex; gap: 10px; max-width: 400px; margin: 0 auto;">
+                        <input type="email" name="email" placeholder="Tu email" required style="flex: 1; padding: 12px 14px; background: rgba(15, 23, 42, 0.6); border: 1px solid var(--line); border-radius: 6px; color: var(--text);">
+                        <button type="submit" class="btn btn-primary">Suscribirse</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-wrap">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Cumplimiento Lean</h4>
+                    <p>Regulatory Data Products para operaciones mineras.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="../../index.html">Inicio</a></li>
+                        <li><a href="index.html">Recursos</a></li>
+                        <li><a href="../contacto/index.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="../legal/privacy.html">Privacidad</a></li>
+                        <li><a href="../legal/terms.html">Términos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Cumplimiento Lean. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+        }
+
+        .article-card {
+            background: var(--bg-soft);
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            padding: 24px;
+            transition: all 0.3s ease;
+        }
+
+        .article-card:hover {
+            border-color: var(--primary);
+            background: rgba(56, 189, 248, 0.05);
+            transform: translateY(-4px);
+        }
+
+        .article-tag {
+            display: inline-block;
+            background: rgba(99, 102, 241, 0.2);
+            color: var(--primary-2);
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .article-card h3 {
+            font-size: 1.15rem;
+            margin-bottom: 10px;
+        }
+
+        .article-card p {
+            color: var(--muted);
+            font-size: 0.9rem;
+            margin-bottom: 14px;
+        }
+
+        .article-card a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+        }
+
+        .article-card a:hover {
+            color: #0ea5e9;
+        }
+    </style>
+</body>
+</html>

@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacta con Cumplimiento Lean para evaluar tu operación regulatoria minera.">
     <title>Contacto | Cumplimiento Lean</title>
     <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link rel="stylesheet" href="../../assets/css/contact-form.css">
 </head>
 <body>
     <header class="site-header">
@@ -12,29 +14,136 @@
             <div class="brand">Cumplimiento Lean</div>
             <nav class="main-nav">
                 <a href="../../index.html">Inicio</a>
-                <a href="../masterclass/index.html">Masterclass</a>
-                <a href="../consultoria/index.html">Consultoría</a>
-                <a href="../casos/index.html">Casos</a>
-                <a href="index.html" class="active">Contacto</a>
+                <a href="../../index.html#pricing">Pricing</a>
+                <a href="../recursos/index.html">Recursos</a>
+                <a href="index.html" class="cta-link active">Contacto</a>
             </nav>
         </div>
     </header>
 
-    <main class="container section">
-        <h2>Contacto</h2>
-        <p>Si quieres diseñar tu sistema regulatorio minero o evaluar el mejor camino para tu operación, contáctanos.</p>
+    <main>
+        <section class="section">
+            <div class="container">
+                <h2>Contacto</h2>
+                <p class="section-subtitle">Cuéntanos sobre tu operación y te ayudaremos a evaluar la mejor estrategia regulatoria.</p>
 
-        <div class="card" style="margin-top: 24px; max-width: 720px;">
-            <p><strong>Email:</strong> psoto@cumplimientolean.com</p>
-            <p><strong>LinkedIn:</strong> linkedin.com/in/pablosotobevilacqua</p>
-            <p><strong>Horario:</strong> Chile / LATAM</p>
-        </div>
+                <div class="contact-wrapper">
+                    <form class="contact-form" action="https://formspree.io/f/myzqbzgb" method="POST">
+                        <div class="form-group">
+                            <label for="name">Nombre Completo *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company">Empresa / Proyecto *</label>
+                            <input type="text" id="company" name="company" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mineral">Tipo de Mineral</label>
+                            <select id="mineral" name="mineral">
+                                <option value="">Seleccionar...</option>
+                                <option value="litio">Litio</option>
+                                <option value="cobre">Cobre</option>
+                                <option value="oro">Oro</option>
+                                <option value="plata">Plata</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="country">País de Operación *</label>
+                            <select id="country" name="country" required>
+                                <option value="">Seleccionar...</option>
+                                <option value="chile">Chile</option>
+                                <option value="peru">Perú</option>
+                                <option value="colombia">Colombia</option>
+                                <option value="argentina">Argentina</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>¿En qué estás interesado? *</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox">
+                                    <input type="checkbox" name="interested" value="masterclass">
+                                    <span>Masterclass</span>
+                                </label>
+                                <label class="checkbox">
+                                    <input type="checkbox" name="interested" value="sistema-privado">
+                                    <span>Sistema Privado</span>
+                                </label>
+                                <label class="checkbox">
+                                    <input type="checkbox" name="interested" value="consultoria">
+                                    <span>Consultoría Enterprise</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Cuéntanos tu desafío *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Describe brevemente tu situación regulatoria..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large">Enviar solicitud</button>
+                    </form>
+
+                    <div class="contact-info">
+                        <h3>Otras formas de contactar</h3>
+                        <div class="info-item">
+                            <strong>Email</strong>
+                            <p><a href="mailto:psoto@cumplimientolean.com">psoto@cumplimientolean.com</a></p>
+                        </div>
+                        <div class="info-item">
+                            <strong>LinkedIn</strong>
+                            <p><a href="https://linkedin.com/in/pablosotobevilacqua" target="_blank">Pablo Soto Bevilacqua</a></p>
+                        </div>
+                        <div class="info-item">
+                            <strong>Ubicación</strong>
+                            <p>Chile / LATAM (soporte remoto)</p>
+                        </div>
+                        <div class="info-item">
+                            <strong>Tiempo de respuesta</strong>
+                            <p>24-48 horas hábiles</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="site-footer">
         <div class="container footer-wrap">
-            <p>© 2026 Cumplimiento Lean</p>
-            <a href="index.html">Contacto</a>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Cumplimiento Lean</h4>
+                    <p>Regulatory Data Products para operaciones mineras.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="../../index.html">Inicio</a></li>
+                        <li><a href="../recursos/index.html">Recursos</a></li>
+                        <li><a href="index.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="../legal/privacy.html">Privacidad</a></li>
+                        <li><a href="../legal/terms.html">Términos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Cumplimiento Lean. Todos los derechos reservados.</p>
+            </div>
         </div>
     </footer>
 </body>
