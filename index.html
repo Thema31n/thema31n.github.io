@@ -10,236 +10,265 @@
     <meta property="og:description" content="Convierte el riesgo regulatorio minero en dashboards interactivos y decisiones accionables.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://cumplimientolean.github.io">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%23038bdf8' width='100' height='100'/%3E%3Ctext x='50' y='70' font-size='70' fill='white' text-anchor='middle' font-weight='bold'%3ECL%3C/text%3E%3C/svg%3E">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%2338bdf8' width='100' height='100'/%3E%3Ctext x='50' y='70' font-size='70' fill='white' text-anchor='middle' font-weight='bold'%3ECL%3C/text%3E%3C/svg%3E">
     <title>Cumplimiento Lean | Regulatory Data Products para Minería</title>
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-    <header class="site-header">
+    <!-- FLOATING CTA -->
+    <div class="floating-cta" id="floatingCta">
+        <button class="cta-close" onclick="document.getElementById('floatingCta').style.display='none'">×</button>
+        <div class="cta-content">
+            <p>¿Listo para transformar tu operación?</p>
+            <a href="pages/contacto/index.html" class="btn btn-primary btn-sm">Agenda una demo</a>
+        </div>
+    </div>
+
+    <header class="site-header" id="siteHeader">
         <div class="container nav-wrap">
             <div class="brand">Cumplimiento Lean</div>
             <nav class="main-nav">
-                <a href="index.html" class="active">Inicio</a>
-                <a href="#pricing">Pricing</a>
-                <a href="pages/recursos/index.html">Recursos</a>
-                <a href="pages/contacto/index.html" class="cta-link">Contacto</a>
+                <a href="index.html" class="nav-link active">Inicio</a>
+                <a href="#beneficios" class="nav-link">Por qué</a>
+                <a href="#pricing" class="nav-link">Precios</a>
+                <a href="pages/blog/index.html" class="nav-link">Blog</a>
+                <a href="pages/contacto/index.html" class="nav-link nav-cta">Contacto</a>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="hero">
-            <div class="container hero-inner">
-                <div class="badge">Category of One: Regulatory Data Products</div>
-                <h1>No analices el riesgo regulatorio minero.<br><span>Hazlo visible, interactivo y accionable.</span></h1>
-                <p>La consultoría minera tradicional te cobra por redactar informes estáticos de 500 páginas. Nosotros convertimos datos regulatorios en dashboards inteligentes, predicciones precisas y alertas en tiempo real para acelerar tus inversiones.</p>
-                <div class="cta-row">
-                    <a class="btn btn-primary" href="#pricing">Ver planes</a>
-                    <a class="btn btn-secondary" href="pages/contacto/index.html">Contactar</a>
+        <!-- HERO PREMIUM -->
+        <section class="hero-premium">
+            <div class="hero-bg"></div>
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1>Regulación minera <span>sin fricción</span></h1>
+                    <p>Convierte riesgo regulatorio en ventaja competitiva. Dashboards inteligentes, predicciones precisas, alertas en tiempo real.</p>
+                    <div class="hero-buttons">
+                        <a href="#pricing" class="btn btn-primary btn-lg">Ver planes</a>
+                        <a href="pages/contacto/index.html" class="btn btn-outline btn-lg">Contactar</a>
+                    </div>
+                </div>
+                <div class="hero-metrics">
+                    <div class="metric">
+                        <div class="metric-value">-75%</div>
+                        <div class="metric-label">Reducción de timelines</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-value">8+</div>
+                        <div class="metric-label">Jurisdicciones</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-value">48h</div>
+                        <div class="metric-label">Tiempo de respuesta</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-value">100%</div>
+                        <div class="metric-label">Seguridad de datos</div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="section bg-dark">
+        <!-- CLIENTES / LOGOS -->
+        <section class="clients-section">
             <div class="container">
-                <h2>¿Por qué Cumplimiento Lean?</h2>
-                <div class="value-grid">
-                    <div class="value-card">
-                        <div class="icon">⚡</div>
+                <p class="clients-label">Utilizado por operaciones mineras de escala</p>
+                <div class="clients-grid">
+                    <div class="client-logo">Minera X</div>
+                    <div class="client-logo">Operaciones Y</div>
+                    <div class="client-logo">Proyecto Z</div>
+                    <div class="client-logo">Litio Chile</div>
+                    <div class="client-logo">Cobre Perú</div>
+                    <div class="client-logo">Oro LATAM</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BENEFICIOS -->
+        <section class="section-benefits" id="beneficios">
+            <div class="container">
+                <div class="section-header">
+                    <h2>¿Por qué Cumplimiento Lean?</h2>
+                    <p>La única plataforma diseñada para el riesgo regulatorio minero</p>
+                </div>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">⚡</div>
                         <h3>Velocidad</h3>
-                        <p>Análisis regulatorio que tardaba 6 meses, ahora en 2 semanas.</p>
+                        <p>De 6 meses de análisis a 2 semanas. Decisiones regulatorias en tiempo real.</p>
+                        <a href="pages/blog/index.html" class="benefit-link">Leer caso →</a>
                     </div>
-                    <div class="value-card">
-                        <div class="icon">📊</div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">📊</div>
                         <h3>Visualización</h3>
-                        <p>Convierte 300 páginas de PDF en un dashboard ejecutivo.</p>
+                        <p>300 páginas de PDF convertidas en un dashboard ejecutivo de 5 clicks.</p>
+                        <a href="pages/blog/index.html" class="benefit-link">Ver demo →</a>
                     </div>
-                    <div class="value-card">
-                        <div class="icon">🎯</div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🎯</div>
                         <h3>Precisión</h3>
-                        <p>Predicciones basadas en comportamiento histórico del regulador.</p>
+                        <p>Predicciones basadas en 10+ años de historial regulatorio de cada jurisdicción.</p>
+                        <a href="pages/blog/index.html" class="benefit-link">Metodología →</a>
                     </div>
-                    <div class="value-card">
-                        <div class="icon">🔔</div>
-                        <h3>Alertas</h3>
-                        <p>Notificaciones en tiempo real ante cambios regulatorios.</p>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🔔</div>
+                        <h3>Alertas en tiempo real</h3>
+                        <p>Cambios regulatorios detectados automáticamente. Tu equipo, siempre adelantado.</p>
+                        <a href="pages/blog/index.html" class="benefit-link">Cómo funciona →</a>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="container">
-                <h2>El Cambio de Estándar</h2>
-                <div class="comparison-grid">
-                    <div class="panel panel-danger">
-                        <h3>❌ El Viejo Enfoque</h3>
-                        <ul>
-                            <li>Plazos al “ojo” sin trazabilidad</li>
-                            <li>Excel y PDFs manuales</li>
-                            <li>6+ meses de análisis</li>
-                            <li>Reportes que nadie entiende</li>
-                        </ul>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🔐</div>
+                        <h3>Seguridad enterprise</h3>
+                        <p>Datos encriptados, deployments privados, compliance total con regulaciones.</p>
+                        <a href="pages/contacto/index.html" class="benefit-link">Seguridad →</a>
                     </div>
-                    <div class="panel panel-success">
-                        <h3>✅ El Nuevo Enfoque</h3>
-                        <ul>
-                            <li>Modelado predictivo preciso</li>
-                            <li>IA operando en tiempo real</li>
-                            <li>2 semanas de implementación</li>
-                            <li>Dashboards claros y accionables</li>
-                        </ul>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">💡</div>
+                        <h3>IA generativa</h3>
+                        <p>Prompts avanzados operando sobre datasets regulatorios estructurados.</p>
+                        <a href="pages/blog/index.html" class="benefit-link">Tecnología →</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section bg-dark" id="pricing">
+        <!-- PRICING -->
+        <section class="section-pricing" id="pricing">
             <div class="container">
-                <h2>Planes y Precios</h2>
-                <p class="section-subtitle">Elige el nivel de involucramiento que tu operación requiere.</p>
-                <div class="pricing-grid">
-                    <div class="pricing-card">
-                        <div class="pricing-badge">Inicio</div>
-                        <h3>Masterclass</h3>
-                        <p class="pricing-desc">Para equipos internos que quieren aprender y construir su propio sistema.</p>
-                        <div class="pricing-amount">
-                            <span class="currency">$</span>
-                            <span class="number">2,490</span>
-                            <span class="period">/USD</span>
+                <div class="section-header">
+                    <h2>Planes simples y transparentes</h2>
+                    <p>Escala desde un equipo interno hasta una operación multinacional</p>
+                </div>
+                <div class="pricing-grid-premium">
+                    <div class="pricing-card-premium">
+                        <div class="pricing-header">
+                            <h3>Aprender</h3>
+                            <p>Para tu equipo interno</p>
                         </div>
-                        <ul class="pricing-features">
-                            <li>✓ Acceso a 8 módulos de formación</li>
-                            <li>✓ Framework completo de prompts</li>
-                            <li>✓ Templates de dashboards</li>
-                            <li>✓ Comunidad privada</li>
-                            <li>✓ Soporte por email (30 días)</li>
+                        <div class="pricing-price">
+                            <span class="price-number">2,490</span>
+                            <span class="price-currency">USD</span>
+                        </div>
+                        <ul class="pricing-list">
+                            <li>8 módulos de formación</li>
+                            <li>Framework de prompts</li>
+                            <li>Templates de dashboards</li>
+                            <li>Comunidad privada</li>
+                            <li>Soporte 30 días</li>
                         </ul>
-                        <a href="pages/contacto/index.html" class="btn btn-primary">Inscribirse</a>
+                        <a href="pages/contacto/index.html" class="btn btn-primary btn-block">Empezar</a>
                     </div>
 
-                    <div class="pricing-card pricing-featured">
-                        <div class="pricing-badge badge-featured">Recomendado</div>
-                        <h3>Sistema Privado</h3>
-                        <p class="pricing-desc">Solución completa: auditoría, diseño, implementación y operación.</p>
-                        <div class="pricing-amount">
-                            <span class="currency">$</span>
-                            <span class="number">18,900</span>
-                            <span class="period">/USD (proyecto)</span>
+                    <div class="pricing-card-premium pricing-highlighted">
+                        <div class="pricing-badge">Más popular</div>
+                        <div class="pricing-header">
+                            <h3>Implementar</h3>
+                            <p>Solución lista para producción</p>
                         </div>
-                        <ul class="pricing-features">
-                            <li>✓ Gemelo digital regulatorio</li>
-                            <li>✓ Ingesta de datos normativo</li>
-                            <li>✓ Dashboard ejecutivo</li>
-                            <li>✓ Alertas predictivas</li>
-                            <li>✓ 90 días de implementación</li>
-                            <li>✓ Soporte operacional 6 meses</li>
+                        <div class="pricing-price">
+                            <span class="price-number">18,900</span>
+                            <span class="price-currency">USD</span>
+                            <span class="price-period">proyecto</span>
+                        </div>
+                        <ul class="pricing-list">
+                            <li>Gemelo digital regulatorio</li>
+                            <li>Dashboard ejecutivo</li>
+                            <li>Alertas predictivas</li>
+                            <li>90 días de implementación</li>
+                            <li>Soporte 6 meses operacional</li>
                         </ul>
-                        <a href="pages/contacto/index.html" class="btn btn-secondary">Solicitar demo</a>
+                        <a href="pages/contacto/index.html" class="btn btn-secondary btn-block">Solicitar demo</a>
                     </div>
 
-                    <div class="pricing-card">
-                        <div class="pricing-badge">Enterprise</div>
-                        <h3>Consultoría Total</h3>
-                        <p class="pricing-desc">Para operaciones complejas con múltiples jurisdicciones.</p>
-                        <div class="pricing-amount">
-                            <span class="currency">Personalizado</span>
+                    <div class="pricing-card-premium">
+                        <div class="pricing-header">
+                            <h3>Enterprise</h3>
+                            <p>Operaciones multinacionales</p>
                         </div>
-                        <ul class="pricing-features">
-                            <li>✓ Auditoría completa de riesgo</li>
-                            <li>✓ Sistema multi-jurisdicción</li>
-                            <li>✓ Modelado predictivo avanzado</li>
-                            <li>✓ Equipo dedicado</li>
-                            <li>✓ Integración con TMS/ERP</li>
-                            <li>✓ SLA y garantías de uptime</li>
+                        <div class="pricing-price">
+                            <span class="price-number">Personalizado</span>
+                        </div>
+                        <ul class="pricing-list">
+                            <li>Multi-jurisdicción</li>
+                            <li>Modelado predictivo avanzado</li>
+                            <li>Equipo dedicado</li>
+                            <li>Integraciones ERP/TMS</li>
+                            <li>SLA y uptime garantizado</li>
                         </ul>
-                        <a href="pages/contacto/index.html" class="btn btn-outline">Contactar</a>
+                        <a href="pages/contacto/index.html" class="btn btn-outline btn-block">Contactar</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section">
+        <!-- CASOS -->
+        <section class="section-cases">
             <div class="container">
-                <h2>Casos de Impacto Real</h2>
-                <div class="case-boxes">
-                    <div class="case-box">
-                        <div class="case-metric">-75%</div>
+                <div class="section-header">
+                    <h2>Casos de impacto</h2>
+                    <p>Resultados reales de operaciones mineras</p>
+                </div>
+                <div class="cases-grid">
+                    <div class="case-card">
+                        <div class="case-metric-big">-75%</div>
                         <h3>Litio: Aceleración de timelines</h3>
-                        <p>Proyecto de exploración con 87 requisitos regulatorios redujo ciclo de aprobación de 18 a 6 meses mediante modelado predictivo.</p>
+                        <p>Proyecto de exploración con 87 requisitos regulatorios redujo ciclo de aprobación de 18 a 6 meses.</p>
+                        <a href="pages/blog/index.html" class="case-link">Leer caso →</a>
                     </div>
-                    <div class="case-box">
-                        <div class="case-metric">8 países</div>
-                        <h3>Cobre: Monitoreo global</h3>
-                        <p>Operación multinacional ahora detecta cambios legales en 48 horas con alertas en tiempo real por jurisdicción.</p>
+                    <div class="case-card">
+                        <div class="case-metric-big">8 países</div>
+                        <h3>Cobre: Monitoreo multinacional</h3>
+                        <p>Operación detecta cambios legales en 48 horas en múltiples jurisdicciones sin depender de consultores.</p>
+                        <a href="pages/blog/index.html" class="case-link">Leer caso →</a>
                     </div>
-                    <div class="case-box">
-                        <div class="case-metric">300→5</div>
-                        <h3>Oro: Claridad ejecutiva</h3>
-                        <p>Convirtió 300 páginas de reportes en un dashboard interactivo que la mesa directiva usa a diario.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section bg-dark">
-            <div class="container">
-                <h2>Preguntas Frecuentes</h2>
-                <div class="faq-list">
-                    <div class="faq-item">
-                        <h4>¿Cuánto tiempo toma implementar?</h4>
-                        <p>Masterclass: acceso inmediato. Sistema Privado: 8-12 semanas desde auditoría hasta go-live en producción.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h4>¿Funciona con diferentes jurisdicciones?</h4>
-                        <p>Sí. Optimizado para LATAM (Chile, Perú, Colombia) y adaptable a cualquier régimen regulatorio donde operes.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h4>¿Qué pasa ante cambios regulatorios?</h4>
-                        <p>El sistema detecta automáticamente cambios y re-evalúa el modelo. Recibirás alertas según tu configuración.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h4>¿Los datos están seguros?</h4>
-                        <p>Sí. Encriptados en tránsito y en reposo. Ofrecemos deployments privados (on-premise o VPC exclusiva).</p>
-                    </div>
-                    <div class="faq-item">
-                        <h4>¿Puedo migrar desde sistemas existentes?</h4>
-                        <p>Sí. Ingesta desde Excel, SharePoint, bases de datos y sistemas ERP/TMS específicos de minería.</p>
+                    <div class="case-card">
+                        <div class="case-metric-big">300→5</div>
+                        <h3>Oro: Dashboard ejecutivo</h3>
+                        <p>Convirtió 300 páginas de reportes en un dashboard interactivo que la mesa directiva usa diariamente.</p>
+                        <a href="pages/blog/index.html" class="case-link">Leer caso →</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section cta-final">
-            <div class="container">
-                <h2>¿Listo para transformar tu operación regulatoria?</h2>
-                <p>Agenda una sesión de 30 minutos con nuestro equipo para evaluar tu caso específico.</p>
-                <a href="pages/contacto/index.html" class="btn btn-primary btn-large">Agendar sesión</a>
+        <!-- CTA FINAL -->
+        <section class="section-cta-final">
+            <div class="container cta-final-content">
+                <h2>¿Listo para decisiones regulatorias más rápidas?</h2>
+                <p>Agenda una sesión de 30 minutos. Sin presión. Sin compromisos.</p>
+                <a href="pages/contacto/index.html" class="btn btn-primary btn-lg">Agendar sesión</a>
             </div>
         </section>
     </main>
 
     <footer class="site-footer">
-        <div class="container footer-wrap">
-            <div class="footer-content">
-                <div class="footer-section">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
                     <h4>Cumplimiento Lean</h4>
-                    <p>Regulatory Data Products para operaciones mineras.</p>
+                    <p>Regulatory Data Products para operaciones mineras de escala.</p>
                 </div>
-                <div class="footer-section">
-                    <h4>Enlaces</h4>
+                <div class="footer-col">
+                    <h5>Producto</h5>
                     <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="pages/recursos/index.html">Recursos</a></li>
+                        <li><a href="#pricing">Precios</a></li>
+                        <li><a href="pages/blog/index.html">Blog</a></li>
                         <li><a href="pages/contacto/index.html">Contacto</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
-                    <h4>Legal</h4>
+                <div class="footer-col">
+                    <h5>Legal</h5>
                     <ul>
                         <li><a href="pages/legal/privacy.html">Privacidad</a></li>
                         <li><a href="pages/legal/terms.html">Términos</a></li>
                     </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Contacto</h5>
+                    <p>psoto@cumplimientolean.com</p>
+                    <p>Chile / LATAM</p>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -247,5 +276,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
